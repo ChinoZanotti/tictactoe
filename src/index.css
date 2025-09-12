@@ -6,6 +6,8 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: #191919;
+  color: #fff;
 }
 
 h1 {
@@ -57,18 +59,43 @@ body {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: #191919;
+  border: 1px solid #5A5A5A;
+  color: #BD9650;
   float: left;
-  font-size: 24px;
+  font-size: 120px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 1.3em;
+  height: 1.3em;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 1.3em;
+}
+
+.game-board .board-row:nth-child(2) .square:nth-child(1),
+.game-board .board-row:nth-child(2) .square:nth-child(2),
+.game-board .board-row:nth-child(2) .square:nth-child(3) {
+  border-top: none;
+}
+
+.game-board .board-row:nth-child(2) .square:nth-child(3),
+.game-board .board-row:nth-child(3) .square:nth-child(3),
+.game-board .board-row:nth-child(4) .square:nth-child(3) {
+  border-right: none;
+}
+
+.game-board .board-row:nth-child(4) .square:nth-child(1),
+.game-board .board-row:nth-child(4) .square:nth-child(2),
+.game-board .board-row:nth-child(4) .square:nth-child(3) {
+  border-bottom: none;
+}
+
+.game-board .board-row:nth-child(2) .square:nth-child(1),
+.game-board .board-row:nth-child(3) .square:nth-child(1),
+.game-board .board-row:nth-child(4) .square:nth-child(1) {
+  border-left: none;
 }
 
 .board-row:after {
@@ -78,13 +105,22 @@ body {
 }
 
 .status {
-  margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2em;
 }
 .game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board,
+.game-info {
+  padding: 2em;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin: 0;
 }
