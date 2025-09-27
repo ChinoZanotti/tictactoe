@@ -60,10 +60,10 @@ body {
 
 .square {
   background: #191919;
-  border: 1px solid #5A5A5A;
-  color: #BD9650;
+  border: 3px solid #5A5A5A;
+  color: #D3542A;
   float: left;
-  font-size: 120px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 1.3em;
   height: 1.3em;
@@ -123,4 +123,26 @@ body {
 
 .game-info {
   margin: 0;
+}
+
+.game-info ol {
+  text-align: center;
+  padding-left: 0;
+}
+
+.game-info li {
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+.game-info button {
+  background-color: #BD9650;
+  color: #fff;
+  padding: .5em 1em;
+  border: none;
+  border-radius: .5em;
+}
+
+.game-info button:hover {
+  background-color: #94763f;
 }
